@@ -1,33 +1,38 @@
 package com.example.homework7_;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.EditText;
-import android.view.View;
 import android.widget.TextView;
+import android.view.View;
 
-import com.example.homework7_.R;
-import com.example.homework7_.databinding.ActivityMainBinding;
+import com.example.homework7_.databinding.ActivityDashboardBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class DashboardActivity extends AppCompatActivity{
+    String usernameLoginEdit; // Variabel anggota kelas
+    ActivityDashboardBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        binding = ActivityDashboardBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        String usernameLoginEdit = getIntent().getStringExtra("USERNAME_EXTRA");
-
+        Intent intent = new Intent(this, ProfileActivity.class);
+        usernameLoginEdit = getIntent().getStringExtra("USERNAME_EXTRA");
         TextView userDashTextView = findViewById(R.id.userDash);
         userDashTextView.setText(usernameLoginEdit);
+        intent.putExtra("USERNAME_EXTRA", usernameLoginEdit);
 
 
     }
+
     public void profile(View view)
     {
         Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent); // Menggunakan intent yang sudah diisi dengan username
+        intent.putExtra("USERNAME_EXTRA", usernameLoginEdit);
+        startActivity(intent);
+        finish(); // Menutup DashboardActivity agar tidak dapat kembali dengan tombol back
     }
+
 }

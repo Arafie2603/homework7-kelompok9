@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         viewModel = new ViewModelProvider(this).get(ViewModels.class);
         binding.setViewModel(viewModel);
 
+
+
         viewModel.toLogin.observe(this, value -> {
             if(value.equals(1)) {
                 EditText usernameLogin = findViewById(R.id.Username);

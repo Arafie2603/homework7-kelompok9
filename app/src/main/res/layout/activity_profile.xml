@@ -1,13 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sajshajs"
-        />
+        android:layout_height="400dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="#0198A3"
+            />
+        <ImageView
+            android:layout_width="144dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="-100dp"
+            android:src="@drawable/rakamin"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:src="@drawable/aote"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Name"
+            />
+        <TextView
+            android:id="@+id/usernamePro"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:text="Arafie"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Phone Number"
+            />
+        <TextView
+            android:id="@+id/nomorPro"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:text="0896335326"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Address"
+            />
+        <TextView
+            android:id="@+id/alamatPro"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            android:text="Jl. Cendrawasih"
+            />
+    </FrameLayout>
+
+    <Button
+        android:layout_marginTop="-20dp"
+        android:onClick="logout"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edit_text"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:backgroundTint="#0198A3"/>
+
 
 </LinearLayout>
