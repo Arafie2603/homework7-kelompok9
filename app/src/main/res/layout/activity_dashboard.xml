@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/rakamin"
+        />
+
+    <TextView
+        android:id="@+id/userDash"
+        android:textColor="@color/white"
+        android:layout_marginStart="-150dp"
+        android:background="@drawable/box"
+        android:layout_width="342dp"
+        android:layout_height="200dp"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Arafie"
+        android:padding="16dp"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rp. 10.000.000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="-320dp"
+        android:elevation="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="-415dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/navigation" />
+
+    <ImageButton
+        android:onClick="profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-240dp"
+        android:background="@drawable/button_bar"
+        android:backgroundTint="#0198A3"
+        android:layout_marginTop="630dp"
+        android:src="@drawable/vector"
+        />
+
+</LinearLayout>
