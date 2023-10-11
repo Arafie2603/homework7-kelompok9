@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:onClick="backProfile"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/arrow"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:textSize="19dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="Edit Profile"
+        android:textColor="#0198A3"
+        />
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/rakamin"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="122dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval"
+        android:src="@drawable/aote_oval" />
+    <FrameLayout
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="25dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Name :"
+            />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/input_field"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Phone Number : "
+            />
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="105dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/input_field"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="40dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Address : "
+            />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_marginTop="185dp"
+            android:layout_height="104dp"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/input_field"
+            />
+
+    </FrameLayout>
+    <Button
+        android:onClick="update"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/edit_text"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:backgroundTint="#0198A3"/>
+
+</LinearLayout>

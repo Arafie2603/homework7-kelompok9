@@ -30,9 +30,7 @@ public class DashboardActivity extends AppCompatActivity{
     public void profile(View view)
     {
         Intent intent = new Intent(this, ProfileActivity.class);
-        intent.putExtra("USERNAME_EXTRA", usernameLoginEdit);
         startActivity(intent);
-        finish(); // Menutup DashboardActivity agar tidak dapat kembali dengan tombol back
     }
 
 }
