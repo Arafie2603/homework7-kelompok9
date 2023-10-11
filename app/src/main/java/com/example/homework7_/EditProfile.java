@@ -35,7 +35,7 @@ public class EditProfile extends  AppCompatActivity{
         phoneProfileEdit = phoneUpdate.getText().toString();
 
         EditText editAddress = findViewById(R.id.editAddress);
-        editAddressProfile = phoneUpdate.getText().toString();
+        editAddressProfile = editAddress.getText().toString();
 
         Intent intent = new Intent(this, ProfileActivity.class);
         intent.putExtra("USERNAME_PROFILE", usernameProfileedit);

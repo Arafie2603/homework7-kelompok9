@@ -18,26 +18,40 @@ public class ProfileActivity extends  AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        String usernameLoginEdit = getIntent().getStringExtra("USERNAME_EXTRA");
+        Intent intent = getIntent();
+        usernameLoginEdit = intent.getStringExtra("USERNAME_EXTRA");
+
         TextView userDashTextView = findViewById(R.id.usernameProfile);
         userDashTextView.setText(usernameLoginEdit);
 
-        String usernameProfileEdit = getIntent().getStringExtra("USERNAME_PROFILE");
-        String phoneProfileEdit = getIntent().getStringExtra("PHONE_PROFILE");
-        userDashTextView.setText(usernameProfileEdit);
+        String usernameProfileEdit = intent.getStringExtra("USERNAME_PROFILE");
+        TextView userEdit = findViewById(R.id.usernameProfile2); // Sesuaikan ID yang ingin ditampilkan
+        userEdit.setText(usernameProfileEdit);
 
+        String phoneProfileEdit = intent.getStringExtra("PHONE_PROFILE");
         TextView phoneEdit = findViewById(R.id.nomorPro);
         phoneEdit.setText(phoneProfileEdit);
+
+        String addressProfileEdit = intent.getStringExtra("ADDRESS_PROFILE");
+        TextView addressEdit = findViewById(R.id.alamatPro);
+        addressEdit.setText(addressProfileEdit);
+
+
+
+
+
 
     }
     public void logout(View view)
     {
         Intent intent = new Intent(this, MainActivity.class);
+        intent.putExtra("USERNAME_EXTRA", usernameLoginEdit);
         startActivity(intent);
     }
     public void edit(View view)
     {
         Intent intent1 = new Intent(this, EditProfile.class);
+        intent1.putExtra("USERNAME_EXTRA", usernameLoginEdit);
         startActivity(intent1);
     }
     public void backDashboard(View view)

@@ -37,22 +37,16 @@
         android:layout_marginStart="-320dp"
         android:elevation="20dp"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginStart="-415dp"
-        android:layout_marginTop="630dp"
-        android:background="@drawable/navigation" />
 
-    <ImageButton
-        android:onClick="profile"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="-230dp"
-        android:background="@drawable/button_bar"
-        android:backgroundTint="#0198A3"
-        android:layout_marginTop="655dp"
-        android:src="@drawable/vector"
-        />
+        <ImageButton
+            android:onClick="profile"
+            android:layout_width="50dp"
+            android:background="@drawable/oval"
+            android:layout_height="50dp"
+            android:layout_marginStart="-100dp"
+            android:backgroundTint="#0198A3"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/vector"
+            />
 
 </LinearLayout>
